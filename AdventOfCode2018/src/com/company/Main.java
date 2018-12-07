@@ -40,18 +40,33 @@ public class Main {
 //        System.out.println(dayTwo.findCommonSequenceInBoxIds(ids));
 
         // Day 3
-        List<String> claims = new ArrayList<>();
+//        List<String> claims = new ArrayList<>();
+//
+//        while (true) {
+//            String input =  in.nextLine();
+//            if (input.length() == 1) {
+//                break;
+//            }
+//            claims.add(input);
+//        }
+//
+//        DayThree dayThree = new DayThree();
+//        System.out.println(dayThree.getAreaOfOverlappingFabric(claims));
+//        System.out.println(dayThree.getIdOfOnlyNonOverlappingClaim(claims));
+
+        // Day 4
+        List<String> recordStrings = new ArrayList<>();
 
         while (true) {
             String input =  in.nextLine();
             if (input.length() == 1) {
                 break;
             }
-            claims.add(input);
+            recordStrings.add(input);
         }
 
-        DayThree dayThree = new DayThree();
-        System.out.println(dayThree.getAreaOfOverlappingFabric(claims));
-        System.out.println(dayThree.getIdOfOnlyNonOverlappingClaim(claims));
+        DayFour dayFour = new DayFour();
+        System.out.println(dayFour.getGuardIdMultipliedByMostSleptMinute(recordStrings));
+        System.out.println(dayFour.getGuardIdMultipliedByMostSleptMinuteStrategyTwo(recordStrings));
     }
 }
