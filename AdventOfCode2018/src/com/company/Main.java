@@ -1,7 +1,5 @@
 package com.company;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -55,18 +53,24 @@ public class Main {
 //        System.out.println(dayThree.getIdOfOnlyNonOverlappingClaim(claims));
 
         // Day 4
-        List<String> recordStrings = new ArrayList<>();
+//        List<String> recordStrings = new ArrayList<>();
+//
+//        while (true) {
+//            String input =  in.nextLine();
+//            if (input.length() == 1) {
+//                break;
+//            }
+//            recordStrings.add(input);
+//        }
+//
+//        DayFour dayFour = new DayFour();
+//        System.out.println(dayFour.getGuardIdMultipliedByMostSleptMinute(recordStrings));
+//        System.out.println(dayFour.getGuardIdMultipliedByMostSleptMinuteStrategyTwo(recordStrings));
 
-        while (true) {
-            String input =  in.nextLine();
-            if (input.length() == 1) {
-                break;
-            }
-            recordStrings.add(input);
-        }
-
-        DayFour dayFour = new DayFour();
-        System.out.println(dayFour.getGuardIdMultipliedByMostSleptMinute(recordStrings));
-        System.out.println(dayFour.getGuardIdMultipliedByMostSleptMinuteStrategyTwo(recordStrings));
+        // Day 5
+        String input = in.nextLine();
+        DayFive dayFive = new DayFive();
+        System.out.println(dayFive.getFinalReactedPolymer(input).length());
+        System.out.println(dayFive.getShortestFinalPolymer(input));
     }
 }
