@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -68,9 +70,24 @@ public class Main {
 //        System.out.println(dayFour.getGuardIdMultipliedByMostSleptMinuteStrategyTwo(recordStrings));
 
         // Day 5
-        String input = in.nextLine();
-        DayFive dayFive = new DayFive();
-        System.out.println(dayFive.getFinalReactedPolymer(input).length());
-        System.out.println(dayFive.getShortestFinalPolymer(input));
+//        String input = in.nextLine();
+//        DayFive dayFive = new DayFive();
+//        System.out.println(dayFive.getFinalReactedPolymer(input).length());
+//        System.out.println(dayFive.getShortestFinalPolymer(input));
+
+        // Day 6
+        List<String> coordinatesInput = new ArrayList<>();
+
+        while (true) {
+            String input =  in.nextLine();
+            if (input.length() == 1) {
+                break;
+            }
+            coordinatesInput.add(input);
+        }
+
+        DaySix daySix = new DaySix();
+        System.out.println(daySix.getFurthestLocationDistance(coordinatesInput));
+        System.out.println(daySix.getSizeofSpecialCloseRegion(coordinatesInput));
     }
 }
